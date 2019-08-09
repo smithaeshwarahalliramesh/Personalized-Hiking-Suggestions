@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+container
+{
+	color: white
+}
+
+h2
+{
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Merriweather';
+}
+
+h1
+{
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Merriweather';
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Ubuntu';
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Ubuntu';
+  background-color: Gray;
+  color: White;
+}
+
+body
+{
+    background-image: url("bkg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    font-family: 'Ubuntu'; font-size: 30px;
+    color: White;
+}

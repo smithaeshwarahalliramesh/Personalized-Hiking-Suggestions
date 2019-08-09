@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+container
+{
+	color: white
+}
+
+h2
+{
+	font-size:50px;
+	text-align:center;
+	font-family: 'Merriweather';
+}
+
+h1
+{
+	font-size:40px;
+	font-family: 'Almendra';
+	color: white;
+}
+
+body {
+  background-image: url("bkg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  font-family: 'Ubuntu'; font-size: 30px;
+  color: white;
+}

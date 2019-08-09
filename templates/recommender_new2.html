@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Personalized Hiking Suggestions</title>
+    <link href="../static/recommender_new3.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="container">
+		<h2>Personalized Hiking Suggestions</h2>
+	</header>
+
+    <div class="main" style="width:100%; height: 200px;">
+    
+        <h1>You might like these hikes</h1>
+        <div class="grid-container">
+            {% for rec in recList %}
+                <div class="grid-item">
+            {{ rec }}
+                </div>
+            {% endfor %}
+        </div>
+</body>
+</html>

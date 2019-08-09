@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Personalized Hiking Suggestions</title>
+
+    <link href="../static/index_new1.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header class="container">
+		<h2>Personalized Hiking Suggestions</h2>
+	</header>
+
+    <div class="main" style="width:100%; height: 200px;">
+    
+    <div class="hike" style="width: 45%; float:left; margin: 0px;">
+        <h1>Have you hiked in California before?</h1>
+        <form method="post">
+            Select the hike you liked:&nbsp;
+            <input type="text" type="submit"  list="hikes" name="hike_name" id="hike_name" class="form-control">
+            <datalist id="hikes">
+                <option>I am new to hiking</option>
+                {% for hike in hikeList %}
+                    <option>{{hike}}</option>
+                 {% endfor %}
+            </datalist>
+        </form>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

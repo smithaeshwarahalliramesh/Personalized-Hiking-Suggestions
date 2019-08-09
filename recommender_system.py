@@ -21,15 +21,15 @@ featuresList = ['backpacking', 'bird watching', 'camping', 'cross country skiing
 
 
 def login():
-    driver.get(<trails website>)
-    email = driver.find_element_by_id("user_email").send_keys(<email>)
-    password = driver.find_element_by_id("user_password").send_keys(<password>)
+    #driver.get(<trails website>)
+    #email = driver.find_element_by_id("user_email").send_keys(<email>)
+    #password = driver.find_element_by_id("user_password").send_keys(<password>)
     login_button = driver.find_element_by_class_name("login")
     login_button.click()
 
 
 def get_best_trails_list(fileName):
-    driver.get("<trails website>/california")
+    #driver.get("<trails website>/california")
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'top-trails')))
     time.sleep(2)
     results = driver.find_element_by_class_name("top-trails")
@@ -48,7 +48,7 @@ def get_best_trails_list(fileName):
 
 
 def scrape_data_phase1():
-    path = <path to chrome driver>
+    #path = <path to chrome driver>
     driver = webdriver.Chrome(path + str("chromedriver"))
     get_best_trails_list("trails_list_unformatted.text")
 
